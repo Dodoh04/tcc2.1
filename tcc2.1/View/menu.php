@@ -9,11 +9,13 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="search" placeholder="Pesquisar...">
+        <form method="POST">
+            <input type="search" placeholder="Pesquisar..." name="pesquisa" >
                 
-                    <button href="">
-                        <img src="img/lupa.png" alt="">
-                    </button>
+                <button type="submit" name="btnCadastrar">
+                    <img src="img/lupa.png" alt="">
+                </button>
+            </form>
                 
             </div>
         <div class="imgUser">

@@ -1,6 +1,5 @@
-<?php 
-session_start();
-	include_once "action_php/conexao_bd.php";
+<?php    
+
 	//cabeçalho
 	
 
@@ -18,7 +17,7 @@ session_start();
 
 ?>
 
-<form action="action_php/alterar.php" method="get">
+<form action="action_php/alterar.php" method="post">
     <div class="formsCriar">
 
     <div class="divs"><img src="img/user.png" alt=""></div>
@@ -39,7 +38,8 @@ session_start();
     
 </div>
 
-<button href="" type="submit" class="botaoADD">SALVAR</button>
+<a href="action_php/encerraSession.php" class="botaoSairSessao">TERMINAR SESSÃO</a>
 <a href="alteraSenha.php" class="botaoADD">ALTERAR  A SENHA</a>
+<button type="submit" class="botaoADD">SALVAR</button>
 
 </form>

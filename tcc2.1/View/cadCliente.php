@@ -1,3 +1,4 @@
+
 <?php
 
 include_once "action_php/conexao_bd.php";
@@ -19,18 +20,20 @@ $resultado = mysqli_query($connection, $sql);
                 
 
                 while($dados = mysqli_fetch_array($resultado)){
-                    if($dados['nivelAcess'] != "Farmaceutico" && $dados['nivelAcess'] != "Administrador"){}
-                    else{
+                    if($dados['nivelAcess'] == "Cliente"){ ?>
+                    <div class="card">
+                        <div class="conteudo">
+                                <img src="img/user.png" alt="">
+                                <a href="forms.php?id=<?php echo $dados['cpf'] ?>"><?php echo $dados['nome'];?></a>
+                                <p><?php echo $dados['cpf'];?></p>
+                        </div>
+                    </div>
+                    <?php }else{}}
                 ?>
-
-<div class="card">
-    <div class="conteudo">
-        <img src="img/user.png" alt="">
-        <a href="#"><?php echo $dados['nome'];?></a>
-        <p><?php echo $dados['cpf'];?></p>
-    </div>
-    <?php }} ?>
-</div>
+<?php ?>
 
 
-</div>
+    
+
+
+

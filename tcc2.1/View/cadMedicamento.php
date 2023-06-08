@@ -23,7 +23,7 @@ while($dados = mysqli_fetch_array($resultado)){
 <div class="card">
     <div class="conteudo">
         <img src="img/iconMedi.png" alt="">
-        <a href="#"><?php echo $dados['NomeProd']; ?></a>
+        <a href="criarproduto.php?id=<?php echo $dados['IdProduto'] ?>"><?php echo $dados['NomeProd']; ?></a>
         <p><?php echo $dados['QtndProd']; ?></p>
     </div>
 </div>
@@ -41,5 +41,5 @@ while($dados = mysqli_fetch_array($resultado)){
     </div>
 
 -->
-<div class="btnADD"><a href="criarProduto.php" class="botaoADD">ADICIONAR</a></div>
+<a href="criarProduto.php" class="botaoADD">ADICIONAR</a>
 </div>

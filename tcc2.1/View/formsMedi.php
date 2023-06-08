@@ -1,3 +1,4 @@
+
 <form action="action_php/criar_produto.php" method="POST">
     <div class="formsCriar">
     <div class="divs"><img src="img/iconMedi.png" alt=""></div>
@@ -13,9 +14,13 @@
         <input type="text" name="descricao" placeholder="Descrição">
         <input type="number" name="qtde" placeholder="Quantidade">
         <input type="date" name="vencimento" placeholder="Data de vencimento">
+        <div class="btns">
+    <button type="submit" name="btnCadProd" class="botaoADD">SALVAR</button>
+    <button type="submit" name="btnCadProd" class="botaoSairSessao">EXCLUIR</button>
+</div>
     </div>
     
 </div>
-<div class="btnADD"><button type="submit" class="botaoADD">EXCLUIR</button> </div>
-<div class="btnADD"><button type="submit" name="btnCadProd" class="botaoADD">SALVAR</button></div>
+
+
 </form>
