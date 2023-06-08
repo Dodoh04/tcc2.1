@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+* a{
+    text-decoration: none;
+    color: black;
+}
+
+* body{
+    background: #D9D9D9;
+}
+* input{
+    border-radius: 20px;
+}
+
+* button{
+    border: 0;
+}
+
+.corpo{
+    width: 1431px;
+    min-height: 550px;
+    margin: 0 auto 0 auto;
+    padding: 35px;
+    background: #fff;
+}
+
+
+
+
+/* tela de login */
+.loginContainer{
+    margin: 0 auto 0 auto;
+    margin-top: 10%;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction:column;
+}
+
+.contlogincomponentes{
+    
+    margin-bottom: 10px;
+} 
+
+.contlogincomponentes{
+    margin: 0 auto 0 auto;
+    margin-bottom: 10px;
+} 
+.contlogincomponentes h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.contlogincomponenteslink{
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+} 
+
+
+/* .contlogincomponentes input{
+    
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}  */
+
+
+.contlogincomponenteslink  .botaoEntrar{
+    color:#fff;
+    background: #334075;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.contlogincomponenteslink  .botaoEsqueci{
+    margin-top: 20px;
+    color:#fff;
+    background: #F2294E;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* menu */
+.menu{
+    width: 1500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto;
+    background: #D9D9D9;
+    
+}
+.menu li{
+    list-style:none;
+}
+.menu li a{
+    color: #000;
+}
+.menu li a:active{
+    color: #334075;
+}
+.menu li a:hover{
+    color: #05C7F2;
+    font-weight: ;
+}
+.logo img{
+    width: 150px;
+    margin-left: 80px;
+    /*background: #fff;*/
+    border-radius: 15px;
+}
+.imgUser img{
+    width: 50px;
+    height: 50px;
+    margin-right: 80px;
+    
+}
+.search{
+    display: flex;
+}
+.search input{
+    height: 30px;
+    border-radius: 20px;
+    border: solid 0.5px;
+}
+.search img{
+    width: 30px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    padding: 15px;
+}
+
+
+
+/* cad medicamentos */
+
+.cad{  
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.conteudo{
+
+    margin: 0 auto 0 auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: #D9D9D9;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+.conteudo img{
+    
+    width: 50px;
+    height: 50px;
+}
+.btnADD{
+    margin-top: 50px;
+    margin-left: 80%;
+
+}
+.botaoADD{
+    color:#fff;
+    background: #334075;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+/* formulario de criação */
+div.formsCriar{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: ;
+}
+
+div.divs{
+    width: 45%;
+    padding: ;
+}
+div.divs label{
+width: 40%;
+}
+
+div.divs img{
+width: 40%;
+}
+
+div.divs input[type="text"], 
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
+    width: 45%;
+    height: 40px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+div.divs input[type="radio"]{
+    margin-left: 50px;
+    margin-right: 40px;
+
+}
+
+/* tela de login */
+
+/* tela de login */
+/* rodape */
+
+.rodape{
+    width: 1500px;
+    padding: 0px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #D9D9D9;
+    margin: 0 auto 0 auto;
+}
+.rodape li{
+    list-style: none;
+}
+.rodape img{
+    padding: 30px;
+    width: 210px;
+}
+.rodape h4{
+    margin: 15px;
+}
+.suporte img{
+    padding: 0;
+    width: 25px;
+}
