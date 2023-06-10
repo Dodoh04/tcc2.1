@@ -25,7 +25,7 @@ $resultado = mysqli_query($connection, $sql);
                 <div class="card">
     <div class="conteudo">
         <img src="img/user.png" alt="">
-        <a href="#"><?php echo $dados['nome'];?></a>
+        <a href="apresentaFunc.php?id=<?php echo $dados['cpf'] ?>"><?php echo $dados['nome'];?></a>
         <p><?php echo $dados['nivelAcess'];?></p>
     </div>
 </div>

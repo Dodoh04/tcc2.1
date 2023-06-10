@@ -6,25 +6,30 @@
 
 	if (isset($_POST['btnAltProd'])) {
 		
-		$nome = mysqli_escape_string($connection,$_POST['nome']);
-		$quantidade = mysqli_escape_string($connection,$_POST['qtd']);
-		$DataAtuali = mysqli_escape_string($connection,$_POST['atualiData']);
+		$nome = mysqli_escape_string($connection,$_POST['nomeProd']);
+		$quantidade = mysqli_escape_string($connection,$_POST['qtde']);
+		$vencimento = mysqli_escape_string($connection,$_POST['vencimento']);
 		$IdProduto = mysqli_escape_string($connection,$_POST['IdProduto']);
+		$fabricante = mysqli_escape_string($connection,$_POST['fabricante']);
+		$tipo = mysqli_escape_string($connection,$_POST['tipoProd']);
+		$medida = mysqli_escape_string($connection,$_POST['medida']);
+		$descricao = mysqli_escape_string($connection,$_POST['descricao']);
 
-		$sql = "UPDATE Produtos SET NomeProd = '$nome', QtndProd = '$quantidade', DataAtualProd = '$DataAtuali' 
+		$sql = "UPDATE Produtos SET NomeProd = '$nome', QtndProd = '$quantidade', DataVenci = '$vencimento',
+		Fabricante = '$fabricante', TipoProd = '$tipo', Medidas = '$medida', Descricao = '$descricao' 
 		WHERE IdProduto = '$IdProduto'";
 
 		if(mysqli_query($connection, $sql)) {
 
 			$_SESSION['mensagem'] = "Alterado com sucesso.";
 
-			header('Location: ../estoque.php');
+			header('Location: ../medicamentos.php');
 		}
 		else{
 
 			$_SESSION['mensagem'] = "Erro ao alterar.";
 
-			header('Location: ../alterar_prod.php');	
+			header('Location: ../apresentaProd.php?id=' . $IdProduto);	
 		}
 	}
 
@@ -38,13 +43,13 @@
 
 			$_SESSION['mensagem'] = "Excluir com sucesso.";
 
-			header('Location: ../estoque.php');
+			header('Location: ../medicamentos.php');
 		}
 		else{
 
 			$_SESSION['mensagem'] = "Erro ao excluir.";
 
-			header('Location: ../estoque.php');	
+			header('Location: ../ApresentaMedi.php');	
 		}
 	}
 

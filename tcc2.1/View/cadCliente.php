@@ -24,7 +24,7 @@ $resultado = mysqli_query($connection, $sql);
                     <div class="card">
                         <div class="conteudo">
                                 <img src="img/user.png" alt="">
-                                <a href="forms.php?id=<?php echo $dados['cpf'] ?>"><?php echo $dados['nome'];?></a>
+                                <a href="apresentaCli.php?id=<?php echo $dados['cpf'] ?>"><?php echo $dados['nome'];?></a>
                                 <p><?php echo $dados['cpf'];?></p>
                         </div>
                     </div>
