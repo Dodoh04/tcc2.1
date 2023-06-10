@@ -19,10 +19,10 @@ $resultado = mysqli_query($connection, $sql);
                 
 
                 while($dados = mysqli_fetch_array($resultado)){
-                    if($dados['nivelAcess'] != "Farmaceutico" && $dados['nivelAcess'] != "Administrador"){}
+                    if($dados['nivelAcess'] == "Cliente"){}
                     else{
                 ?>	
-                <div class="card">
+    <div class="card">
     <div class="conteudo">
         <img src="img/user.png" alt="">
         <a href="apresentaFunc.php?id=<?php echo $dados['cpf'] ?>"><?php echo $dados['nome'];?></a>

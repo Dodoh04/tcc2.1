@@ -15,7 +15,7 @@
 
 ?>
 
-<form action="action_php/.php" method="POST">
+<form action="action_php/alterar.php" method="POST">
     <div class="formsCriar">
     <div class="divs"><img src="img/user.png" alt=""></div>
             
@@ -40,7 +40,7 @@
     <input type="text" name="cpf" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="CPF" maxlength="11" value="<?php echo $dados['cpf']; ?>">
     <input type="email" name="email" placeholder="E-mail" value="<?php echo $dados['email']; ?>">
 
-    <?php if($dados['nivelAcess'] == "Farmaceutico"){?>
+    <?php if($dados['nivelAcess'] == "Farmacêutico"){?>
 
         <input type="radio" name="acesso"  value="Farmacêutico" checked>
         <label for="">Farmacêutico</label>
@@ -56,14 +56,19 @@
 
     
 
-    <input type="text" name="endereço" placeholder="Endereço" maxlength="60" value="<?php echo $dados['endereco']; ?>">
+    <input type="text" name="endereco" placeholder="Endereço" maxlength="60" value="<?php echo $dados['endereco']; ?>">
     <input type="text" name="cidade" placeholder="Cidade" maxlength="50" value="<?php echo $dados['cidade']; ?>">
     <input type="text" name="estado" placeholder="Estado" maxlength="15" value="<?php echo $dados['estado']; ?>">            
     <input type="text" name="telefone" placeholder="Telefone" maxlength="11" value="<?php echo $dados['telefone']; ?>">
     <input type="password" name="senha" placeholder="Senha temporária" maxlength="10" value="<?php echo $dados['senha']; ?>">
     </div>
+</div>
     
 
-<div class="btnADD"><button href="" type="submit" name="btnCadastrar" class="botaoADD">SALVAR</button></div>
+<div class="btnADD">
+    <button href="" type="submit" name="btnAltFunc" class="botaoADD">SALVAR ALTERAÇÃO</button> 
+    <button type="submit" name="btnExcluirFunc" class="botaoSairSessao">EXCLUIR</button>
+</div>
+
 
 </form>

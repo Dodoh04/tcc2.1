@@ -40,7 +40,7 @@
 </div>
 
 <a href="action_php/encerraSession.php" class="botaoSairSessao">TERMINAR SESSÃO</a>
-<a href="alteraSenha.php" class="botaoADD">ALTERAR  A SENHA</a>
+<a href="alteraSenha.php?id=<?php echo $dados['cpf'] ?>" class="botaoADD">ALTERAR  A SENHA</a>
 <button type="submit" class="botaoADD">SALVAR</button>
 
 </form>

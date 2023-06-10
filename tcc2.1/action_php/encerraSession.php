@@ -3,7 +3,7 @@
 
  session_destroy();
 
-header('Location: index.php');
+header('Location: ../index.php');
        
 //$_SESSION['cpf'] = $dados['cpf'];
 //$_SESSION['nome'] = $dados['nome'];

@@ -15,7 +15,7 @@
 
 ?>
 
-<form action="action_php/cadastros_user.php" method="POST">
+<form action="action_php/alterar.php" method="POST">
     <div class="formsCriar">
     <div class="divs"><img src="img/user.png" alt=""></div>
             
@@ -40,14 +40,14 @@
     <input type="text" name="cpf" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" 
     placeholder="CPF" maxlength="11" value="<?php echo $dados['cpf']; ?>">
     <input type="email" name="email" placeholder="E-mail" value="<?php echo $dados['email']; ?>">    
-    <input type="text" name="endereço" placeholder="Endereço" maxlength="60" value="<?php echo $dados['endereco']; ?>">
+    <input type="text" name="endereco" placeholder="Endereço" maxlength="60" value="<?php echo $dados['endereco']; ?>">
     <input type="text" name="cidade" placeholder="Cidade" maxlength="50" value="<?php echo $dados['cidade']; ?>">
     <input type="text" name="estado" placeholder="Estado" maxlength="15" value="<?php echo $dados['estado']; ?>">            
     <input type="text" name="telefone" placeholder="Telefone" maxlength="11" value="<?php echo $dados['telefone']; ?>">
     <input type="password" name="senha" placeholder="Senha temporária" maxlength="10" value="<?php echo $dados['senha']; ?>">
     <div class="btns">
-    <button type="submit" name="btnAltProd" class="botaoADD">SALVAR</button>
-    <button type="submit" name="btnExcluirProd" class="botaoSairSessao">EXCLUIR</button>
+    <button type="submit" name="btnAltCli" class="botaoADD">SALVAR ALTERAÇÃO</button>
+    
 </div>
     </div>
     
