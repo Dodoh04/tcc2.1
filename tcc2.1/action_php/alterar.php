@@ -104,6 +104,36 @@
 			header('Location: ../ApresentaFunc.php?id='.$cpf);	
 		}
 	}
+	if (isset($_POST['btnAltPerfil'])) {
+		
+		$nome = mysqli_escape_string($connection,$_POST['nome']);
+		$sobrenome = mysqli_escape_string($connection,$_POST['sobrenome']);
+        $nivelAcess = mysqli_escape_string($connection,$_POST['acesso']);
+        $cpf = mysqli_escape_string($connection,$_POST['cpf']);
+        $email = mysqli_escape_string($connection,$_POST['email']);
+		$endereco = mysqli_escape_string($connection,$_POST['endereco']);
+		$cidade = mysqli_escape_string($connection,$_POST['cidade']);
+		$estado = mysqli_escape_string($connection,$_POST['estado']);
+		$telefone = mysqli_escape_string($connection,$_POST['telefone']);
+       
+
+		$sql = "UPDATE usuario SET nome = '$nome', sobrenome = '$sobrenome', telefone = '$telefone', estado = '$estado', 
+		cidade = '$cidade', endereco = '$endereco', nivelAcess = '$nivelAcess',  email = '$email'
+		WHERE cpf = '$cpf'";
+
+		if(mysqli_query($connection, $sql)) {
+
+			$_SESSION['mensagem'] = "Alterado com sucesso.";
+
+			header('Location: ../apresentaPerfil.php');
+		}
+		else{
+
+			$_SESSION['mensagem'] = "Erro ao alterar.";
+
+			header('Location: ../apresentaFunc.php?id=' . $cpf);	
+		}
+	}
 	
 	if (isset($_POST['btnAltCli'])) {
 		

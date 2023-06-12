@@ -1,4 +1,13 @@
+
 </div>
+
+
+
+<script>
+    
+    M.AutoInit();
+
+</script>
 <footer class="rodape">
 
        

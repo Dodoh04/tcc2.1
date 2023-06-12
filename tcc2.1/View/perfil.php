@@ -25,15 +25,15 @@
             <div class="divs">
             <input type="text" name="nome" placeholder="Nome" value="<?php echo $dados['nome'];?>">
             <input type="text" name="sobrenome" placeholder="Sobrenome" value="<?php echo $dados['sobrenome'];?>">
-            <label for="">CPF: <?php echo $dados['cpf'];?></label>
+            <input type="text" name="cpf" placeholder="CPF" value="<?php echo $dados['cpf'];?>">
+            <input type="text" name="acesso" placeholder="Cargo" value="<?php echo $dados['nivelAcess'];?>">
             
-            
-            <input type="email" name="" placeholder="E-mail" value="<?php echo $dados['email'];?>">
+            <input type="email" name="email" placeholder="E-mail" value="<?php echo $dados['email'];?>">
            
-            <input type="text" name="" placeholder="Endereço" value="<?php echo $dados['endereco'];?>">
-            <input type="text" name="" placeholder="Cidade" value="<?php echo $dados['cidade'];?>">
-            <input type="text" name="" placeholder="Estado" value="<?php echo $dados['estado'];?>">            
-            <input type="text" name="" placeholder="Telefone" value="<?php echo $dados['telefone'];?>">
+            <input type="text" name="endereco" placeholder="Endereço" value="<?php echo $dados['endereco'];?>">
+            <input type="text" name="cidade" placeholder="Cidade" value="<?php echo $dados['cidade'];?>">
+            <input type="text" name="estado" placeholder="Estado" value="<?php echo $dados['estado'];?>">            
+            <input type="text" name="telefone" placeholder="Telefone" value="<?php echo $dados['telefone'];?>">
             </div>
     
     
@@ -41,6 +41,6 @@
 
 <a href="action_php/encerraSession.php" class="botaoSairSessao">TERMINAR SESSÃO</a>
 <a href="alteraSenha.php?id=<?php echo $dados['cpf'] ?>" class="botaoADD">ALTERAR  A SENHA</a>
-<button type="submit" class="botaoADD">SALVAR</button>
+<button type="submit" name="btnAltPerfil" class="botaoADD">SALVAR</button>
 
 </form>

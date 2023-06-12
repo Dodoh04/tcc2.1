@@ -16,8 +16,14 @@
 ?>
 
     <div class="loginContainer">
+    <?php if($_SESSION['mensagem'] != ""){
+        include_once "action_php/mensagem.php";}
+     $_SESSION['mensagem'] = "";?><br><br>
         
         <div class="contlogincomponentes"><h2>NOVA SENHA</h2></div>
+        
+            
+            
         
         <form action="action_php/alterar.php" method="POST">
         <input type="hidden" name = "cpf" value="<?php echo $dados['cpf']; ?>">

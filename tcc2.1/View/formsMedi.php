@@ -16,7 +16,7 @@
         <input type="date" name="vencimento" placeholder="Data de vencimento">
         <div class="btns">
     <button type="submit" name="btnCadProd" class="botaoADD">SALVAR</button>
-    <button type="submit" name="btnCadProd" class="botaoSairSessao">EXCLUIR</button>
+    
 </div>
     </div>
     
