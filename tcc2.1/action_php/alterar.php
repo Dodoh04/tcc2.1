@@ -41,7 +41,7 @@
 
 		if(mysqli_query($connection, $sql)) {
 
-			$_SESSION['mensagem'] = "Excluir com sucesso.";
+			$_SESSION['mensagem'] = "Excluido com sucesso.";
 
 			header('Location: ../medicamentos.php');
 		}
@@ -93,7 +93,7 @@
 
 		if(mysqli_query($connection, $sql)) {
 
-			$_SESSION['mensagem'] = "Excluir com sucesso.";
+			$_SESSION['mensagem'] = "Excluido com sucesso.";
 
 			header('Location: ../colaboradores.php');
 		}
@@ -191,7 +191,7 @@
 
 		if(mysqli_query($connection, $sql)) {
 
-			$_SESSION['mensagem'] = "Alterado com sucesso.";
+			$_SESSION['mensagem'] = "Senha alterada com sucesso.";
 
 			header('Location: ../apresentaPerfil.php');
 		}else{

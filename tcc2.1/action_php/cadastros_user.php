@@ -25,7 +25,6 @@
 
 		if(mysqli_query($connection, $sql)) {
 
-            echo 'cadastrou';
 
 			$_SESSION['mensagem'] =  "Cadastrado com sucesso.";
 

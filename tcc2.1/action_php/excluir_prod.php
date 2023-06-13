@@ -12,7 +12,7 @@
 
 		if(mysqli_query($connection, $sql)) {
 
-			$_SESSION['mensagem'] = "Excluir com sucesso.";
+			$_SESSION['mensagem'] = "Excluido com sucesso.";
 
 			header('Location: ../estoque.php');
 		}

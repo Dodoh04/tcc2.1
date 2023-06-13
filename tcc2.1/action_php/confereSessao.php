@@ -4,7 +4,7 @@
     
     
 if($_SESSION['nome'] == NULL){
-    include_once "encerraSession.php";
+    header('Location: index.php');
     
 }else{
     include_once "action_php/conexao_bd.php";

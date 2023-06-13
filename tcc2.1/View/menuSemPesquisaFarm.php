@@ -5,7 +5,7 @@
             <ul>
                 <li><a href="medicamentos.php">MEDICAMENTOS</a></li>
                 <li><a href="clientes.php">CLIENTES</a></li>
-                <li><a href="colaboradores.php">COLABORADORES</a></li>
+                
             </ul>
         </nav>
     

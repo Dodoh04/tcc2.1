@@ -3,8 +3,11 @@
     include_once "action_php/confereSessao.php";
     include_once "View/head.php";
     
-    
-    include_once "View/menu.php";
+    if($_SESSION['acesso'] == "Farmacêutico"){
+        include_once "View/menuFarmaceutico.php";
+    }else{    
+        include_once "View/menu.php";
+    }
     
     if($_SESSION['mensagem'] != ""){
         include_once "action_php/mensagem.php";}

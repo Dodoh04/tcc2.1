@@ -24,31 +24,50 @@
         <input type="text" name="fabricante" placeholder="Fabricante" value="<?php echo $dados['Fabricante']; ?>">
 
 
-    <?php if($dados['TipoProd'] == "Genérico"){?>
-
-        <input type="radio" name="tipoProd"  value="Genérico" checked>
-        <label for="">Genérico</label>
-        <input type="radio" name="tipoProd" value="Original">
-        <label for="">Original</label>
-    <?php }else{?>
-            <input type="radio" name="tipoProd"  value="Genérico">
-            <label for="">Genérico</label>
-            <input type="radio" name="tipoProd" value="Original"  checked>
-            <label for="">Original</label>
-    <?php }?>
+    
 
 
         <input type="text" name="medida" placeholder="Medidas em Mg" value="<?php echo $dados['Medidas']; ?>">
-        <input type="text" name="descricao" placeholder="Descrição" value="<?php echo $dados['Descricao']; ?>">
         <input type="number" name="qtde" placeholder="Quantidade" value="<?php echo $dados['QtndProd']; ?>">
+        
+        <div class="nessidade">
         <input type="date" name="vencimento" placeholder="Data de vencimento" value="<?php echo $dados['DataVenci']; ?>">
+        <div class="tipoRemedio">
+            
+        <?php if($dados['TipoProd'] == "Genérico"){?>
+            <div class="conjunto">
+            <input type="radio" id="tipoG" name="tipoProd"  value="Genérico" checked>
+            <label for="tipoG">Genérico</label>
+            </div>
+            <div class="conjunto">
+            <input type="radio" id="tipoO" name="tipoProd" value="Original">
+            <label for="tipoO">Original</label>
+            </div>
+        <?php }else{?>
+            <div class="conjunto">
+            <input type="radio" id="tipoG" name="tipoProd"  value="Genérico" >
+            <label for="tipoG">Genérico</label>
+            </div>
+            <div class="conjunto">
+            <input type="radio" id="tipoO" name="tipoProd" value="Original" checked>
+            <label for="tipoO">Original</label>
+            </div>
+        <?php }?>
+  
+        </div>
+        </div>
+
+
+        <textarea name="descricao"  placeholder="Descrição"><?php echo $dados['Descricao']; ?></textarea>
+        
         <div class="btns">
     <button type="submit" name="btnAltProd" class="botaoADD">SALVAR</button>
     <button type="submit" name="btnExcluirProd" class="botaoSairSessao">EXCLUIR</button>
 </div>
     </div>
-    
 </div>
-
-
 </form>
+
+
+
+

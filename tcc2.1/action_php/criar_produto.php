@@ -30,9 +30,9 @@
 			echo 'deu errado';	
 
 
-			//$_SESSION['mensagem'] = "Erro ao cadastrar.";
+			$_SESSION['mensagem'] = "Erro ao cadastrar.";
 
-			//header('Location: ../AdicionarProd.php');	
+			header('Location: ../criarProduto.php');	
 		}
 	}
 

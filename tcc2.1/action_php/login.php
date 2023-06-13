@@ -23,7 +23,7 @@
 		$_SESSION['acesso'] = $dados['nivelAcess'];
 
 
-		if($dados['nivelAcess'] != "Administrador" && $dados['nivelAcess'] != "Farmaceutico"){
+		if($dados['nivelAcess'] != "Administrador" && $dados['nivelAcess'] != "Farmacêutico"){
 			
 			header('location: ../index.php');
 		}else{
@@ -44,7 +44,7 @@
 
 
 			if($total == 1){
-				$_SESSION['mensagem'] = "";
+				$_SESSION['mensagem'] = "Seja bem vindo!";
 				header('location: ../medicamentos.php');
 			}
 			else{

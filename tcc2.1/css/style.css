@@ -1,14 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-family: FreeMono, monospace;
+    font-size: 18px;
     text-align: center;
+    font-weight: ;
 }
 * a{
     font-family: ;
     text-decoration: none;
     color: black;
+    
+}
+* a:hover, button:hover,
+input:hover{
+    opacity: 0.6;
 }
 
 * body{
@@ -23,7 +29,7 @@
 * button{
     border: 0;
     margin: 0;
-    
+    border-radius: 15px;
 }
 
 * form{
@@ -65,7 +71,7 @@
 } 
 .contlogincomponentes h1{
     font-size: 30px;
-    font-weight: bolder;
+    font-weight: ;
 }
 
 .contlogincomponenteslink{
@@ -75,28 +81,28 @@
 } 
 
 
-/* .contlogincomponentes input{
+.contlogincomponentes input{
     
-    width: 300px;
-    border-radius: 20px;
-    padding: 10px;
+    width: 45%;
+    
+    
     text-align: center;
-}  */
+}  
 
 
 .contlogincomponenteslink  .botaoEntrar{
     color:#fff;
     background: #334075;
-    padding: 15px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .contlogincomponenteslink  .botaoEsqueci{
     margin-top: 20px;
     color:#fff;
     background: #F2294E;
-    padding: 15px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 
@@ -123,7 +129,7 @@
 }
 .menu li a:hover{
     color: #05C7F2;
-    font-weight: ;
+    
 }
 .logo img{
     width: 150px;
@@ -199,7 +205,7 @@
     color:#fff;
     background: #334075;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-top: 20px;
     margin: 30px;
 }
@@ -207,7 +213,7 @@
     color:#fff;
     background: #F2294E;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 30px;
 }
 
@@ -231,23 +237,53 @@ width: 40%;
 div.divs img{
 width: 40%;
 }
+div.divs textarea{
+    width: 95%;
+    border-radius: 20px;
+    border: solid 0.3px;
+    margin: 10px;
+}
 
 div.divs input[type="text"], 
 input[type="number"],
 input[type="email"],
 input[type="password"],
-input[type="date"]{
+input[type="date"]
+{
     width: 45%;
-    
     margin: 10px;
     margin-bottom: 20px;
+}
+.nessidade{
+    display: flex;
+    margin-bottom: 10px;    
+}
+div .divs .tipoRemedio{
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+     
+}
+div .divs .tipoRemedio .conjunto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
-div.divs input[type="radio"]{
+
+div .divs .tipoRemedio .conjunto label{
+    margin-right: 23px;
+    margin-left: -5px;
+}
+
+
+/* div.divs input[type="radio"]{
     margin-left: 50px;
     margin-right: 40px;
 
-}
+} */
 
 /* tela de login */
 
