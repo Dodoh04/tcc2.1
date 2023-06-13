@@ -24,6 +24,7 @@
 
 
 		if($dados['nivelAcess'] != "Administrador" && $dados['nivelAcess'] != "Farmaceutico"){
+			
 			header('location: ../index.php');
 		}else{
 
@@ -43,7 +44,7 @@
 
 
 			if($total == 1){
-
+				$_SESSION['mensagem'] = "";
 				header('location: ../medicamentos.php');
 			}
 			else{
